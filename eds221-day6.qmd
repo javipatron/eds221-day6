@@ -1,0 +1,24 @@
+---
+title: "eds221-day6"
+format: revealjs
+editor: visual
+---
+
+## Exercise
+
+```{r}
+animal <- c("brown bear", "red bird", "yellow duck", "blue horse")
+
+for (i in seq_along(animal)) {
+  print(paste((animal[i], animal[i], "what do you see?, I see a", animal[i+1], " looking at me.")))
+}
+
+```
+
+```{r}
+animal <- c("brown bear", "red bird", "yellow duck", "blue horse")
+
+for (i in seq(from = 1, to = length(animal) -1)){
+  print(paste(animal[i), animal[i], "text", animal[i+1]))
+}
+```
